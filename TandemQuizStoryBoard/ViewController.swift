@@ -13,7 +13,9 @@ class ViewController: UIViewController {
         viewDidLoad()
     }
     
-    let questions = DataLoader().questions.shuffled()
+    let questions = DataLoader().questions.shuffled().prefix(10)
+  
+   
     
     
     var currentQuestion: Question?
