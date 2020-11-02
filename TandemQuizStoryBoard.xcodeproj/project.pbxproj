@@ -15,6 +15,10 @@
 		0F730BB8254DE6A100925802 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F730BB7254DE6A100925802 /* Assets.xcassets */; };
 		0F730BBB254DE6A100925802 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F730BB9254DE6A100925802 /* LaunchScreen.storyboard */; };
 		0F730BC6254DE6A100925802 /* TandemQuizStoryBoardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F730BC5254DE6A100925802 /* TandemQuizStoryBoardTests.swift */; };
+		0F730BD3254DE6EC00925802 /* Apprentice_TandemFor400_Data.json in Resources */ = {isa = PBXBuildFile; fileRef = 0F730BD0254DE6EC00925802 /* Apprentice_TandemFor400_Data.json */; };
+		0F730BD4254DE6EC00925802 /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F730BD1254DE6EC00925802 /* DataLoader.swift */; };
+		0F730BD5254DE6EC00925802 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F730BD2254DE6EC00925802 /* Question.swift */; };
+		0F730BD7254FB2DA00925802 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F730BD6254FB2DA00925802 /* ResultsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,10 @@
 		0F730BC1254DE6A100925802 /* TandemQuizStoryBoardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TandemQuizStoryBoardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F730BC5254DE6A100925802 /* TandemQuizStoryBoardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TandemQuizStoryBoardTests.swift; sourceTree = "<group>"; };
 		0F730BC7254DE6A100925802 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F730BD0254DE6EC00925802 /* Apprentice_TandemFor400_Data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Apprentice_TandemFor400_Data.json; sourceTree = "<group>"; };
+		0F730BD1254DE6EC00925802 /* DataLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
+		0F730BD2254DE6EC00925802 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		0F730BD6254FB2DA00925802 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,9 +89,13 @@
 		0F730BAA254DE69C00925802 /* TandemQuizStoryBoard */ = {
 			isa = PBXGroup;
 			children = (
+				0F730BD0254DE6EC00925802 /* Apprentice_TandemFor400_Data.json */,
+				0F730BD1254DE6EC00925802 /* DataLoader.swift */,
+				0F730BD2254DE6EC00925802 /* Question.swift */,
 				0F730BAB254DE69C00925802 /* AppDelegate.swift */,
 				0F730BAD254DE69C00925802 /* SceneDelegate.swift */,
 				0F730BAF254DE69C00925802 /* ViewController.swift */,
+				0F730BD6254FB2DA00925802 /* ResultsViewController.swift */,
 				0F730BB1254DE69C00925802 /* Main.storyboard */,
 				0F730BB7254DE6A100925802 /* Assets.xcassets */,
 				0F730BB9254DE6A100925802 /* LaunchScreen.storyboard */,
@@ -183,6 +195,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F730BD3254DE6EC00925802 /* Apprentice_TandemFor400_Data.json in Resources */,
 				0F730BBB254DE6A100925802 /* LaunchScreen.storyboard in Resources */,
 				0F730BB8254DE6A100925802 /* Assets.xcassets in Resources */,
 				0F730BB3254DE69C00925802 /* Main.storyboard in Resources */,
@@ -203,8 +216,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F730BD4254DE6EC00925802 /* DataLoader.swift in Sources */,
 				0F730BB6254DE69C00925802 /* TandemQuizStoryBoard.xcdatamodeld in Sources */,
 				0F730BB0254DE69C00925802 /* ViewController.swift in Sources */,
+				0F730BD7254FB2DA00925802 /* ResultsViewController.swift in Sources */,
+				0F730BD5254DE6EC00925802 /* Question.swift in Sources */,
 				0F730BAC254DE69C00925802 /* AppDelegate.swift in Sources */,
 				0F730BAE254DE69C00925802 /* SceneDelegate.swift in Sources */,
 			);
