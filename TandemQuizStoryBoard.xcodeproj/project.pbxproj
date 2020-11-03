@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F0DAF0A2550F93B00C2FED9 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0DAF092550F93B00C2FED9 /* CustomButton.swift */; };
 		0F730BAC254DE69C00925802 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F730BAB254DE69C00925802 /* AppDelegate.swift */; };
 		0F730BAE254DE69C00925802 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F730BAD254DE69C00925802 /* SceneDelegate.swift */; };
 		0F730BB0254DE69C00925802 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F730BAF254DE69C00925802 /* ViewController.swift */; };
@@ -32,6 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F0DAF092550F93B00C2FED9 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		0F730BA8254DE69C00925802 /* TandemQuizStoryBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TandemQuizStoryBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F730BAB254DE69C00925802 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F730BAD254DE69C00925802 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 				0F730BAB254DE69C00925802 /* AppDelegate.swift */,
 				0F730BAD254DE69C00925802 /* SceneDelegate.swift */,
 				0F730BAF254DE69C00925802 /* ViewController.swift */,
+				0F0DAF092550F93B00C2FED9 /* CustomButton.swift */,
 				0F730BD6254FB2DA00925802 /* ResultsViewController.swift */,
 				0F730BB1254DE69C00925802 /* Main.storyboard */,
 				0F730BB7254DE6A100925802 /* Assets.xcassets */,
@@ -220,6 +223,7 @@
 				0F730BB6254DE69C00925802 /* TandemQuizStoryBoard.xcdatamodeld in Sources */,
 				0F730BB0254DE69C00925802 /* ViewController.swift in Sources */,
 				0F730BD7254FB2DA00925802 /* ResultsViewController.swift in Sources */,
+				0F0DAF0A2550F93B00C2FED9 /* CustomButton.swift in Sources */,
 				0F730BD5254DE6EC00925802 /* Question.swift in Sources */,
 				0F730BAC254DE69C00925802 /* AppDelegate.swift in Sources */,
 				0F730BAE254DE69C00925802 /* SceneDelegate.swift in Sources */,
