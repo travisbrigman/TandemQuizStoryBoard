@@ -24,39 +24,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="OYb-Pb-NBw">
-                                <rect key="frame" x="177" y="306" width="60" height="240"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WGA-Pq-42v" customClass="StyledButton" customModule="TandemQuizStoryBoard" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="60" height="30"/>
-                                        <state key="normal" title="Answer0"/>
-                                        <connections>
-                                            <action selector="submitAnswer0:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hoV-N7-T99"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="al8-e3-8jU" customClass="StyledButton" customModule="TandemQuizStoryBoard" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="70" width="60" height="30"/>
-                                        <state key="normal" title="Answer1"/>
-                                        <connections>
-                                            <action selector="submitAnswer1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qJl-OH-1VS"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BWg-M6-N93" customClass="StyledButton" customModule="TandemQuizStoryBoard" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="140" width="60" height="30"/>
-                                        <state key="normal" title="Answer2"/>
-                                        <connections>
-                                            <action selector="submitAnswer2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="05C-RE-DxV"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RaV-N1-t3v" customClass="StyledButton" customModule="TandemQuizStoryBoard" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="210" width="60" height="30"/>
-                                        <state key="normal" title="Answer3"/>
-                                        <connections>
-                                            <action selector="submitAnswer3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vOv-vJ-0Zd"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="progress" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1fy-OA-0Wq">
                                 <rect key="frame" x="20" y="731" width="374" height="52"/>
                                 <constraints>
@@ -72,19 +39,13 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1fy-OA-0Wq" secondAttribute="bottom" constant="79" id="FU0-Rg-yoU"/>
                             <constraint firstItem="1fy-OA-0Wq" firstAttribute="leading" secondItem="zWj-8R-Tvf" secondAttribute="leading" id="Lf2-oc-6QB"/>
                             <constraint firstItem="zWj-8R-Tvf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Uxw-Jw-CO0"/>
-                            <constraint firstItem="OYb-Pb-NBw" firstAttribute="top" secondItem="zWj-8R-Tvf" secondAttribute="bottom" constant="38" id="aLy-UY-C3r"/>
                             <constraint firstItem="zWj-8R-Tvf" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="bap-Dv-HLv"/>
                             <constraint firstItem="1fy-OA-0Wq" firstAttribute="trailing" secondItem="zWj-8R-Tvf" secondAttribute="trailing" id="u5h-6D-3MU"/>
-                            <constraint firstItem="zWj-8R-Tvf" firstAttribute="centerX" secondItem="OYb-Pb-NBw" secondAttribute="centerX" id="w71-Aa-tiJ"/>
                             <constraint firstItem="zWj-8R-Tvf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="86" id="xtO-dT-Muy"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="answer0" destination="WGA-Pq-42v" id="Zpb-Lb-NuD"/>
-                        <outlet property="answer1" destination="al8-e3-8jU" id="f8T-mP-b5z"/>
-                        <outlet property="answer2" destination="BWg-M6-N93" id="qeP-VI-Ubm"/>
-                        <outlet property="answer3" destination="RaV-N1-t3v" id="uKE-FJ-JaG"/>
                         <outlet property="progress" destination="1fy-OA-0Wq" id="qsP-2Z-v1B"/>
                         <outlet property="question" destination="zWj-8R-Tvf" id="EFM-cZ-FRH"/>
                         <segue destination="Zn4-L3-kdN" kind="showDetail" identifier="sgShowResults" id="2vu-52-zbh"/>
