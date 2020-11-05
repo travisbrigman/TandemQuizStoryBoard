@@ -31,11 +31,6 @@ class ViewController: UIViewController {
     }
     
     
-    //let button0 = UIButton(frame: CGRect(x: 85, y: 265, width: 200, height: 60))
-    //let button1 = UIButton(frame: CGRect(x: 85, y: 285, width: 200, height: 60))
-    //let button2 = UIButton(frame: CGRect(x: 85, y: 305, width: 200, height: 60))
-    //let button3 = UIButton(frame: CGRect(x: 85, y: 325, width: 200, height: 60))
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         currentQuestion = questions[0]
@@ -53,21 +48,36 @@ class ViewController: UIViewController {
         
     }
     
+    let button0 = UIButton(type: .roundedRect)
+    let button1 = UIButton(type: .roundedRect)
+    let button2 = UIButton(type: .roundedRect)
+    let button3 = UIButton(type: .roundedRect)
+    
     func addButtonsToStackView() {
-        var allQuestions = currentQuestion?.incorrect
-        allQuestions?.append(currentQuestion?.correct ?? "no right answer")
-        allQuestions?.shuffle()
+        var allAnswers = currentQuestion?.incorrect
+        allAnswers?.append(currentQuestion?.correct ?? "no right answer")
+        allAnswers?.shuffle()
         
-        if let allQuestions = allQuestions {
-            for question in allQuestions {
-                let button = UIButton(type: .roundedRect)
-                button.setTitle(question, for: .normal)
-
-                stackView.addArrangedSubview(button)
-                
+        var buttonArray = [button0, button1, button2, button3]
+        
+        if let allAnswers = allAnswers {
+            var incrementer = 0
+            
+            if allAnswers.count < 4 {
+                buttonArray.removeLast()
             }
+            
+            for button in buttonArray {
+                button.setTitle(allAnswers[incrementer], for: .normal)
+                                
+                button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
+                stackView.addArrangedSubview(button)
+                incrementer+=1
+            }
+            
+            
         }
-
+        
     }
     
     func setStackViewConstraints() {
@@ -85,10 +95,10 @@ class ViewController: UIViewController {
         
         question.text = currentQuestion!.question
         
-       // button0.setTitle(currentQuestion!.incorrect[0], for: .normal)
-       // button0.setTitleColor(.systemBlue, for: .normal)
-       // button0.addTarget(self, action: #selector(buttonAction0), for: .touchUpInside)
-       // self.view.addSubview(button0)
+        // button0.setTitle(currentQuestion!.incorrect[0], for: .normal)
+        // button0.setTitleColor(.systemBlue, for: .normal)
+        // button0.addTarget(self, action: #selector(buttonAction0), for: .touchUpInside)
+        // self.view.addSubview(button0)
         
         //button1.frame(forAlignmentRect: CGRect(x: 85, y: yAxis[1], width: 200, height: 60))
         //button1.setTitle(currentQuestion!.incorrect[1], for: .normal)
@@ -122,25 +132,16 @@ class ViewController: UIViewController {
     }
     
     // Submit an answer
-
-    @objc func buttonAction(answer: String) {
-        checkAnswer(ansString: answer)
-    }
     
-       /*
-    @objc func buttonAction1() {
-        checkAnswer(ansString: currentQuestion?.incorrect[1] ?? "error")
+    
+    @objc func buttonAction(sender: UIButton!) {
+       let touchedAnswer = sender.titleLabel?.text
+        checkAnswer(ansString: touchedAnswer ?? "error")
+        
     }
-    @objc func buttonAction2() {
-        checkAnswer(ansString: currentQuestion?.incorrect[2] ?? "error")
-    }
-    @objc func buttonAction3() {
-        checkAnswer(ansString: currentQuestion?.correct ?? "error")
-    }
-    */
     
     // Check if an answer is correct then load the next question
-    @objc func checkAnswer(ansString: String) {
+    func checkAnswer(ansString: String) {
         if(ansString == currentQuestion!.correct) {
             noCorrect += 1
         }
@@ -153,6 +154,8 @@ class ViewController: UIViewController {
             currentQuestionPos += 1
             currentQuestion = questions[currentQuestionPos]
             setQuestion()
+            configureStackView()
+            
             // If there are no more questions show the results
         } else {
             performSegue(withIdentifier: "sgShowResults", sender: nil)
