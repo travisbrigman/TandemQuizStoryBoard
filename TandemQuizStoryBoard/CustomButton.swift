@@ -37,8 +37,4 @@ class CustomButton: UIButton {
         
     }
     
-    func onPress() {
-        print("Pressed")
-        
-    }
 }
