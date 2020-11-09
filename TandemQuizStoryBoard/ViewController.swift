@@ -40,12 +40,15 @@ class ViewController: UIViewController {
         stackView.spacing = 10
         addButtonsToStackView()
         setStackViewConstraints()
+        
     }
     
-    let button0 = UIButton(type: .roundedRect)
-    let button1 = UIButton(type: .roundedRect)
-    let button2 = UIButton(type: .roundedRect)
-    let button3 = UIButton(type: .roundedRect)
+    let button0 = CustomButton()
+    let button1 = CustomButton()
+    let button2 = CustomButton()
+    let button3 = CustomButton()
+    
+    
     
     func addButtonsToStackView() {
         var allAnswers = currentQuestion?.incorrect
@@ -67,9 +70,7 @@ class ViewController: UIViewController {
                 stackView.addArrangedSubview(button)
                 incrementer+=1
             }
-            
         }
-        
     }
     
     func removeButtonsFromStackView() {
@@ -86,7 +87,7 @@ class ViewController: UIViewController {
         stackView.bottomAnchor.constraint(equalTo: progress.topAnchor, constant: 20).isActive = true
         stackView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 50).isActive = true
         stackView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -50).isActive = true
-        stackView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -30).isActive = true
+//        stackView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -30).isActive = true
     }
     
     // Set labels and buttons for the current question
