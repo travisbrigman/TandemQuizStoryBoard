@@ -19,6 +19,7 @@ init() {
     backgroundColor = .init(red: 153.0/255.0, green: 51.0/255.0, blue: 153.0/255.0, alpha: 0.6)
     //setTitle(title, for: .normal)
     setTitleColor(.white, for: .normal)
+    self.titleLabel?.numberOfLines = 0
     titleLabel?.font = UIFont.boldSystemFont(ofSize: 24)
     layer.cornerRadius = 12
     layer.masksToBounds = true
