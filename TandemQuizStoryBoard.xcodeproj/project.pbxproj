@@ -36,7 +36,7 @@
 
 /* Begin PBXFileReference section */
 		0F0DAF092550F93B00C2FED9 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
-		0F194DDC255ECCCA00538DBF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		0F194DDC255ECCCA00538DBF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = Readme/README.md; sourceTree = "<group>"; };
 		0F194DDE255ECF2E00538DBF /* resultsScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = resultsScreen.png; sourceTree = "<group>"; };
 		0F194DE0255ECF3800538DBF /* QuestionScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QuestionScreen.png; sourceTree = "<group>"; };
 		0F730BA8254DE69C00925802 /* TandemQuizStoryBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TandemQuizStoryBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,7 +78,6 @@
 		0F194DDD255ECF0C00538DBF /* Readme */ = {
 			isa = PBXGroup;
 			children = (
-				0F194DDC255ECCCA00538DBF /* README.md */,
 				0F194DDE255ECF2E00538DBF /* resultsScreen.png */,
 				0F194DE0255ECF3800538DBF /* QuestionScreen.png */,
 			);
@@ -92,6 +91,7 @@
 				0F730BAA254DE69C00925802 /* TandemQuizStoryBoard */,
 				0F730BC4254DE6A100925802 /* TandemQuizStoryBoardTests */,
 				0F730BA9254DE69C00925802 /* Products */,
+				0F194DDC255ECCCA00538DBF /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
