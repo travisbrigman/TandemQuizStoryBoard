@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0F0DAF0A2550F93B00C2FED9 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0DAF092550F93B00C2FED9 /* CustomButton.swift */; };
+		0F194DDF255ECF2E00538DBF /* resultsScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F194DDE255ECF2E00538DBF /* resultsScreen.png */; };
+		0F194DE1255ECF3800538DBF /* QuestionScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F194DE0255ECF3800538DBF /* QuestionScreen.png */; };
 		0F730BAC254DE69C00925802 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F730BAB254DE69C00925802 /* AppDelegate.swift */; };
 		0F730BAE254DE69C00925802 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F730BAD254DE69C00925802 /* SceneDelegate.swift */; };
 		0F730BB0254DE69C00925802 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F730BAF254DE69C00925802 /* ViewController.swift */; };
@@ -34,6 +36,9 @@
 
 /* Begin PBXFileReference section */
 		0F0DAF092550F93B00C2FED9 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		0F194DDC255ECCCA00538DBF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		0F194DDE255ECF2E00538DBF /* resultsScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = resultsScreen.png; sourceTree = "<group>"; };
+		0F194DE0255ECF3800538DBF /* QuestionScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QuestionScreen.png; sourceTree = "<group>"; };
 		0F730BA8254DE69C00925802 /* TandemQuizStoryBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TandemQuizStoryBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F730BAB254DE69C00925802 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F730BAD254DE69C00925802 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,9 +75,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F194DDD255ECF0C00538DBF /* Readme */ = {
+			isa = PBXGroup;
+			children = (
+				0F194DDC255ECCCA00538DBF /* README.md */,
+				0F194DDE255ECF2E00538DBF /* resultsScreen.png */,
+				0F194DE0255ECF3800538DBF /* QuestionScreen.png */,
+			);
+			path = Readme;
+			sourceTree = "<group>";
+		};
 		0F730B9F254DE69C00925802 = {
 			isa = PBXGroup;
 			children = (
+				0F194DDD255ECF0C00538DBF /* Readme */,
 				0F730BAA254DE69C00925802 /* TandemQuizStoryBoard */,
 				0F730BC4254DE6A100925802 /* TandemQuizStoryBoardTests */,
 				0F730BA9254DE69C00925802 /* Products */,
@@ -198,10 +214,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F194DE1255ECF3800538DBF /* QuestionScreen.png in Resources */,
 				0F730BD3254DE6EC00925802 /* Apprentice_TandemFor400_Data.json in Resources */,
 				0F730BBB254DE6A100925802 /* LaunchScreen.storyboard in Resources */,
 				0F730BB8254DE6A100925802 /* Assets.xcassets in Resources */,
 				0F730BB3254DE69C00925802 /* Main.storyboard in Resources */,
+				0F194DDF255ECF2E00538DBF /* resultsScreen.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
