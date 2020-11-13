@@ -14,7 +14,7 @@ to run the app:
 
 ### Screen Shots
 
-![QuestionScreen](Readme/QuestionScreen.png)
+![QuestionScreen](QuestionScreen.png)
 
-![ResultsScreen](Readme/resultsScreen.png)
+![ResultsScreen](resultsScreen.png)
 
